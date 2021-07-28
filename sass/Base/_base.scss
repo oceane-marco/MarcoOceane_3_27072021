@@ -1,2 +1,42 @@
+//body
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0px;
+}
+
+//main
+main {
+  @include tablette {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
 //header
 
+header {
+  text-align: center;
+  padding: 1rem 0 0 0;
+  i {
+    position: absolute;
+    left: 20px;
+  }
+}
+
+// footer
+
+footer {
+  background-color: #353535;
+  color: white;
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    li {
+      padding: 10px 0px;
+    }
+  }
+}
+
+//boutton

@@ -1,0 +1,5 @@
+@mixin tablette {
+  @media only screen and (min-width: map-get($map:$breakpoint , $key:tablette )) {
+    @content;
+  }
+}

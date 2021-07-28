@@ -1,1 +1,2 @@
-/* No CSS *//*# sourceMappingURL=style.min.css.map */
+a:link{text-decoration:none;color:black}a:visited{color:black;text-decoration:none}a:hover{color:black;text-decoration:none}a:focus,a:active{text-decoration:none;color:#000000}body{margin:0px}body{font-family:"roboto", sans-serif;margin:0px}@media only screen and (min-width: 700px){main{padding:20px;max-width:1200px;margin:auto}}header{text-align:center;padding:1rem 0 0 0}header i{position:absolute;left:20px}footer{background-color:#353535;color:white}footer ul{list-style:none;margin:0px;padding:0px}footer ul li{padding:10px 0px}.explor{display:flex;flex-direction:column;text-align:center}.explor__local{background-color:#EAEAEA}.explor__presentation{background-color:#F6F6F6}
+/*# sourceMappingURL=style.min.css.map */
