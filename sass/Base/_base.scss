@@ -4,20 +4,32 @@ body {
   margin: 0px;
 }
 
-//main
-main {
-  @include tablette {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
+//text
+h1 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+h4 {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
 }
 
 //header
 
 header {
   text-align: center;
-  padding: 1rem 0 0 0;
+  padding: 1rem 0;
   i {
     position: absolute;
     left: 20px;
@@ -28,7 +40,7 @@ header {
 
 footer {
   background-color: #353535;
-  color: white;
+  color: #fff;
   ul {
     list-style: none;
     margin: 0px;
@@ -40,3 +52,19 @@ footer {
 }
 
 //boutton
+
+.btn {
+  @include shadowcard;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  border-radius: 2rem;
+  border: none;
+  background-image: radial-gradient(
+    ellipse farthest-corner at 20px 0,
+    $secondarycolor 0%,
+    $primarycolor 100%
+  );
+  cursor: pointer;
+}

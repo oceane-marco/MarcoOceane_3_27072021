@@ -1,11 +1,89 @@
-.explor{
-    display: flex;
-    flex-direction: column;
+.containerEF {
+  @include tablette {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.explor {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  @include tablette {
+    height: 100%;
+  }
+  &__local {
+    background-color: $backgrounddark;
+    padding: 10px;
     text-align: center;
-    &__local{
-        background-color: #EAEAEA;
+    @include tablette {
+      p {
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
     }
-    &__presentation{
-        background-color: #F6F6F6;
+  }
+  &__presentation {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $backgroundmiddle;
+    padding: 2rem;
+  }
+}
+
+.fonction {
+  padding: 1rem;
+  width: 100%;
+  @include tablette {
+    padding: 0rem;
+    height: 100%;
+    h2 {
+      font-size: 2rem;
+      padding: 1.83rem;
+      margin: 0rem;
+      text-align: center;
+      background-color: $backgrounddark;
     }
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 90%;
+    row-gap: 20px;
+    @include tablette {
+      grid-template-columns: 1fr 70% 1fr;
+      background-color: $backgroundmiddle;
+    }
+  }
+  li {
+    display: flex;
+    background-color: $backgroundmiddle;
+    margin: 1.5rem 0 25px 0;
+    padding: 1.8rem 0 1.3rem 0;
+    align-items: center;
+    width: 100%;
+    border-radius: 1.5rem;
+    @include shadowcard;
+    @include tablette {
+      grid-column-start: 2;
+      border-color: none;
+    }
+  }
+  i {
+    padding: 0 1rem;
+  }
+  &__counter {
+    color: #fff;
+    background-color: $primarycolor;
+    border: 1px solid $primarycolor;
+    border-radius: 50%;
+    padding: 4px 8px 4px 8px;
+    margin: 0 1.5rem 0 -12px;
+  }
 }
