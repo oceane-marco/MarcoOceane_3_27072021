@@ -4,25 +4,30 @@ body {
   margin: 0px;
 }
 
-//text
+//text and icons
 h1 {
-  margin: 1rem 0;
+  margin: 0;
   font-size: 2rem;
 }
 
 h2 {
-  margin: 1rem 0;
+  margin: 0;
   font-size: 1.5rem;
 }
 
 h4 {
-  margin: 1rem 0;
+  margin: 0;
   font-size: 1rem;
 }
 
 p {
   margin: 0.5rem 0;
   font-size: 1rem;
+}
+
+.fas,
+.far {
+  font-size: 1.5rem;
 }
 
 //header
@@ -67,4 +72,33 @@ footer {
     $primarycolor 100%
   );
   cursor: pointer;
+}
+
+//img
+
+img {
+  object-fit: cover;
+}
+
+//cards
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  background-color: $backgroundlight;
+  &__img {
+    height: 10rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+
+// heart
+
+.gradiant-heart {
+  color: $primarycolor;
+  display: block;
+  background: -webkit-linear-gradient($primarycolor, $secondarycolor);
+
+  -webkit-text-fill-color: transparent;
 }

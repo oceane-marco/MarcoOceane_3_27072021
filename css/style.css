@@ -29,23 +29,28 @@ body {
 }
 
 h1 {
-  margin: 1rem 0;
+  margin: 0;
   font-size: 2rem;
 }
 
 h2 {
-  margin: 1rem 0;
+  margin: 0;
   font-size: 1.5rem;
 }
 
 h4 {
-  margin: 1rem 0;
+  margin: 0;
   font-size: 1rem;
 }
 
 p {
   margin: 0.5rem 0;
   font-size: 1rem;
+}
+
+.fas,
+.far {
+  font-size: 1.5rem;
 }
 
 header {
@@ -81,8 +86,48 @@ footer ul li {
   margin: 1rem 0 1rem 0;
   border-radius: 2rem;
   border: none;
-  background-image: radial-gradient(ellipse farthest-corner at 20px 0, #ff79da 0%, #9356dc 100%);
+  background-image: radial-gradient(
+    ellipse farthest-corner at 20px 0,
+    #ff79da 0%,
+    #9356dc 100%
+  );
   cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.Card__img {
+  height: 10rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.fa-heart {
+  padding: 1rem;
+}
+
+.heart .fas {
+  display: none;
+}
+
+.fas {
+  display: none;
+}
+
+.gradiant-heart {
+  color: #9356dc;
+  display: block;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (min-width: 700px) {
@@ -192,5 +237,50 @@ footer ul li {
   border-radius: 50%;
   padding: 4px 8px 4px 8px;
   margin: 0 1.5rem 0 -12px;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .restaurant {
+    background-color: #fff;
+    padding: 5rem;
+  }
+}
+
+.restaurant .ContainerCard {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+@media only screen and (min-width: 700px) {
+  .restaurant .ContainerCard {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 3px 3px 10px #dedada;
+  border-radius: 1rem;
+}
+
+.Card__img {
+  height: 10rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.Card__info {
+  display: flex;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
