@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-  margin: 0;
+  margin: 1rem;
   font-size: 1.5rem;
 }
 
@@ -66,6 +66,11 @@ header i {
 footer {
   background-color: #353535;
   color: #fff;
+  background-image: #fff;
+}
+
+footer .ContainerF {
+  padding: 1rem;
 }
 
 footer ul {
@@ -81,16 +86,13 @@ footer ul li {
 .btn {
   box-shadow: 3px 3px 10px #dedada;
   font-size: 1.5rem;
+  max-width: 300px;
   color: #fff;
   padding: 1rem;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem auto;
   border-radius: 2rem;
   border: none;
-  background-image: radial-gradient(
-    ellipse farthest-corner at 20px 0,
-    #ff79da 0%,
-    #9356dc 100%
-  );
+  background-image: radial-gradient(ellipse farthest-corner at 20px 0, #ff79da 0%, #9356dc 100%);
   cursor: pointer;
 }
 
@@ -110,24 +112,12 @@ img {
   border-radius: 1rem 1rem 0 0;
 }
 
-.fa-heart {
-  padding: 1rem;
-}
-
 .heart .fas {
   display: none;
 }
 
-.fas {
-  display: none;
-}
-
-.gradiant-heart {
-  color: #9356dc;
-  display: block;
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.fa-heart {
+  padding: 1rem;
 }
 
 @media only screen and (min-width: 700px) {
@@ -168,12 +158,12 @@ img {
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+  justify-items: center;
   background-color: #f6f6f6;
   padding: 2rem;
 }
 
 .fonction {
-  padding: 1rem;
   width: 100%;
 }
 
@@ -193,12 +183,12 @@ img {
 
 .fonction ul {
   margin: 0px;
-  padding: 0px;
+  padding: 2rem;
   list-style: none;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 90%;
-  row-gap: 20px;
+  row-gap: 2rem;
 }
 
 @media only screen and (min-width: 700px) {
@@ -211,8 +201,8 @@ img {
 .fonction li {
   display: flex;
   background-color: #f6f6f6;
-  margin: 1.5rem 0 25px 0;
-  padding: 1.8rem 0 1.3rem 0;
+  margin: 0 0 1rem 0;
+  padding: 2rem 0 1rem 0;
   align-items: center;
   width: 100%;
   border-radius: 1.5rem;
@@ -222,7 +212,6 @@ img {
 @media only screen and (min-width: 700px) {
   .fonction li {
     grid-column-start: 2;
-    border-color: none;
   }
 }
 
@@ -236,7 +225,7 @@ img {
   border: 1px solid #9356dc;
   border-radius: 50%;
   padding: 4px 8px 4px 8px;
-  margin: 0 1.5rem 0 -12px;
+  margin: 0 1.5rem 0 -1rem;
 }
 
 .restaurant {
@@ -246,6 +235,7 @@ img {
 
 @media only screen and (min-width: 700px) {
   .restaurant {
+    border-top: 5px solid #9356dc;
     background-color: #fff;
     padding: 5rem;
   }
@@ -254,14 +244,14 @@ img {
 .restaurant .ContainerCard {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
+  row-gap: 2rem;
 }
 
 @media only screen and (min-width: 700px) {
   .restaurant .ContainerCard {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 20px;
-    column-gap: 20px;
+    column-gap: 2rem;
   }
 }
 
@@ -274,7 +264,7 @@ img {
 }
 
 .Card__img {
-  height: 10rem;
+  height: 15rem;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
 }
@@ -282,5 +272,6 @@ img {
 .Card__info {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
