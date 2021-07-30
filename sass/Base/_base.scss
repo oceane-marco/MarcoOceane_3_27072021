@@ -29,6 +29,14 @@ p {
 .far {
   font-size: 1.5rem;
 }
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("polices/shrikhand-regular-webfont.woff2") format("woff2"),
+    url("polices/shrikhand-regular-webfont.woff") format("woff"),
+    url("polices/Shrikhand-Regular.TrueType") format("TrueType");
+  font-weight: normal;
+  font-style: normal;
+}
 
 //header
 
@@ -101,10 +109,8 @@ img {
 
 // heart
 .heart {
-  
   .fas {
     display: none;
-   
   }
 }
 

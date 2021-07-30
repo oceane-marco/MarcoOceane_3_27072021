@@ -3,6 +3,11 @@
     @content;
   }
 }
+@mixin desktop {
+  @media only screen and (min-width: map-get($map:$breakpoint , $key: desktop )) {
+    @content;
+  }
+}
 @mixin shadowcard {
     box-shadow: 3px 3px 10px #dedada;
 }
