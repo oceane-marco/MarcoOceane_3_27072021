@@ -2,7 +2,16 @@
 body {
   font-family: "roboto", sans-serif;
   margin: 0px;
+
+  @include tablette {
+    max-width: 1200px;
+    margin: auto;
+    background-color: $tertiarycolor;
+  }
 }
+
+//main
+
 
 //text and icons
 h1 {
@@ -17,7 +26,7 @@ h2 {
 
 h4 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
 p {
@@ -41,11 +50,19 @@ p {
 //header
 
 header {
+  background-color: $backgroundlight;
   text-align: center;
   padding: 1rem 0;
+  .containerHead {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-content: space-between;
+  }
   i {
-    position: absolute;
-    left: 20px;
+    display: flex;
+    justify-self: flex-start;
+    margin-right: 1rem;
   }
 }
 
