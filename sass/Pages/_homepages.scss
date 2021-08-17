@@ -40,6 +40,7 @@
   @include tablette {
     padding: 0rem;
     height: 100%;
+    border-radius:0px  1.5rem;
     h2 {
       font-size: 2rem;
       padding: 1.83rem;
@@ -64,8 +65,7 @@
   li {
     display: flex;
     background-color: $backgroundmiddle;
-    margin: 0 0 1rem 0;
-    padding: 2rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
     align-items: center;
     width: 100%;
     border-radius: 1.5rem;
@@ -91,7 +91,6 @@
   background-color: $backgroundmiddle;
   padding: 1rem;
   @include tablette {
-    border-top: 5px solid #9356dc;
     background-color: $backgroundlight;
     padding: 5rem;
   }
