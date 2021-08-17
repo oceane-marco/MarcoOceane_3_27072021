@@ -64,7 +64,7 @@
     border-radius: 1.5rem;
     @include shadowcard;
     &:hover {
-      background-color: #6e00f4;
+      background-color: hsl(267, 100, 96);
       i {
         color: $primarycolor;
       }
