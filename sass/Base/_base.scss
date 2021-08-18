@@ -10,8 +10,6 @@ body {
   }
 }
 
-//main
-
 
 //text and icons
 h1 {
@@ -45,95 +43,4 @@ p {
     url("polices/Shrikhand-Regular.TrueType") format("TrueType");
   font-weight: normal;
   font-style: normal;
-}
-
-//header
-
-header {
-  background-color: $backgroundlight;
-  text-align: center;
-  padding: 1rem 0;
-  .containerHead {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-content: space-between;
-  }
-  i {
-    display: flex;
-    justify-self: flex-start;
-    margin-right: 1rem;
-  }
-}
-
-// footer
-
-footer {
-  background-color: #353535;
-  color: #fff;
-  background-image: #fff;
-  .ContainerF {
-    padding: 1rem;
-    @include tablette {
-      padding: 1rem 5rem;
-    }
-  }
-  ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    li {
-      padding: 10px 0px;
-    }
-  }
-}
-
-//boutton
-
-.btn {
-  @include shadowcard;
-
-  font-size: 1.5rem;
-  max-width: max-content;
-  color: #fff;
-  padding: 1rem;
-  margin: 1rem auto;
-  border-radius: 2rem;
-  border: none;
-  background-image: radial-gradient(
-    ellipse farthest-corner at 20px 0,
-    $secondarycolor 0%,
-    $primarycolor 100%
-  );
-  cursor: pointer;
-}
-
-//img
-
-img {
-  object-fit: cover;
-}
-
-//cards
-
-.Card {
-  display: flex;
-  flex-direction: column;
-  background-color: $backgroundlight;
-  &__img {
-    height: 10rem;
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
-  }
-}
-
-// heart
-.heart {
-  .fas {
-    display: none;
-  }
-}
-
-.fa-heart {
-  padding: 1rem;
 }

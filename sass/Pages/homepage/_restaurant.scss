@@ -1,0 +1,17 @@
+.restaurant {
+  background-color: $backgroundmiddle;
+  padding: 1rem;
+  @include tablette {
+    padding: 5rem;
+  }
+  .ContainerCard {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 2rem;
+    @include tablette {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+// heart
+.heart {
+  .fas {
+    background: radial-gradient(
+      ellipse farthest-corner at 20px 0,
+      $secondarycolor 0%,
+      $primarycolor 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+.fa-heart {
+  padding: 1rem;
+}

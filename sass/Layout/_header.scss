@@ -1,0 +1,18 @@
+//header
+
+header {
+  background-color: $backgroundlight;
+  text-align: center;
+  padding: 1rem 0;
+  .containerHead {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-content: space-between;
+  }
+  i {
+    display: flex;
+    justify-self: flex-start;
+    margin-right: 1rem;
+  }
+}

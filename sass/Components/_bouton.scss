@@ -1,0 +1,19 @@
+//boutton
+
+.btn {
+  @include shadowcard;
+
+  font-size: 1.5rem;
+  max-width: max-content;
+  color: #fff;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  border: none;
+  background: radial-gradient(
+    ellipse farthest-corner at 20px 0,
+    $secondarycolor 0%,
+    $primarycolor 100%
+  );
+  cursor: pointer;
+}
