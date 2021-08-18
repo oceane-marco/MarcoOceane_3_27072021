@@ -49,13 +49,13 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    &__title {
+    &--title {
       width: min-content;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    &__txt {
+    &--txt {
       width: 60vw;
       white-space: nowrap;
       overflow: hidden;

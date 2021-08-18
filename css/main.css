@@ -125,14 +125,14 @@ p {
   flex-direction: column;
 }
 
-.CardM__container__title {
+.CardM__container--title {
   width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.CardM__container__txt {
+.CardM__container--txt {
   width: 60vw;
   white-space: nowrap;
   overflow: hidden;
