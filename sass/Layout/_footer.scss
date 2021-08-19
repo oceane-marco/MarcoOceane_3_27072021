@@ -2,8 +2,8 @@
 
 footer {
   background-color: #353535;
-  color: #fff;
-  background-image: #fff;
+  color: $backgroundlight;
+  background-image: $backgroundlight;
   .ContainerF {
     padding: 1rem;
     @include tablette {

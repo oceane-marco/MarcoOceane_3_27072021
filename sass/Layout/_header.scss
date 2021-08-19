@@ -2,17 +2,19 @@
 
 header {
   background-color: $backgroundlight;
+
   text-align: center;
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
+  height: min-content;
   .containerHead {
     max-width: 1200px;
     margin: auto;
-    @include flexbox;
-    align-content: space-between;
-  }
-  i {
-    @include flexbox;
-    justify-self: flex-start;
-    margin-right: 1rem;
+    text-align: center;
+    i {
+      @include flexbox;
+      position: relative;
+      left: 20px;
+      top: 28px;
+    }
   }
 }

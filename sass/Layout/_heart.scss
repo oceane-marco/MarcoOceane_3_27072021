@@ -1,16 +1,46 @@
 // heart
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .heart {
-  .fas {
+  padding: 1rem;
+  @include flexbox;
+  width: 2rem;
+  height: 2rem;
+  &:hover {
+    & > .far {
+      opacity: 0;
+      transition: opacity 1s ease-out;
+    }
+    & > .gradiant-heart {
+      animation: fade-out 1s ease-out both reverse;
+    }
+  }
+
+  .far {
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    opacity: 1;
+  }
+
+  .gradiant-heart {
+    position: relative;
+    right: -25px;
     background: radial-gradient(
       ellipse farthest-corner at 20px 0,
       $secondarycolor 0%,
       $primarycolor 100%
     );
+    opacity: 0;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
   }
-}
-.fa-heart {
-  padding: 1rem;
 }

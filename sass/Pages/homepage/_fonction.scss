@@ -1,14 +1,12 @@
 .fonction {
-  width: 100%;
   background-color: $backgroundlight;
   @include tablette {
-    padding: 0rem;
+    padding: 5rem;
     height: 100%;
     h2 {
       font-size: 2rem;
       padding: 1.83rem;
       margin: 0rem;
-      text-align: center;
     }
   }
   ul {
@@ -17,10 +15,12 @@
     list-style: none;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 90%;
+    grid-template-columns: 1fr;
     row-gap: 2rem;
-    @include tablette {
-      grid-template-columns: 1fr 70% 1fr;
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: none;
+      column-gap: 2rem;
     }
   }
   li {
@@ -31,14 +31,12 @@
     width: 100%;
     border-radius: 1.5rem;
     @include shadowcard;
+    @include grow;
     &:hover {
       background-color: hsl(267, 100, 96);
       i {
         color: $primarycolor;
       }
-    }
-    @include tablette {
-      grid-column-start: 2;
     }
   }
   i {

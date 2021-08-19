@@ -38,17 +38,17 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h2 {
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h4 {
   margin: 0;
-  font-size: 1vw;
+  font-size: 1.5rem;
 }
 
 p {
@@ -83,7 +83,14 @@ p {
 .Card {
   background-color: white;
   box-shadow: 3px 3px 10px #dedada;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
   border-radius: 1rem;
+}
+
+.Card:hover {
+  transform: scale(1.05);
 }
 
 .Card__img {
@@ -106,7 +113,14 @@ p {
   border-radius: 0.75rem;
   margin: 1rem 0;
   box-shadow: 3px 3px 10px #dedada;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
   cursor: pointer;
+}
+
+.CardM:hover {
+  transform: scale(1.05);
 }
 
 .CardM__price {
@@ -122,7 +136,6 @@ p {
 .CardM__container {
   overflow: hidden;
   display: flex;
-  -moz-flex-direction: vertical;
   flex-direction: column;
 }
 
@@ -142,13 +155,15 @@ p {
 
 .ContainerCard {
   display: flex;
-  -moz-flex-direction: vertical;
   flex-direction: column;
   width: 100%;
 }
 
 .btn {
   box-shadow: 3px 3px 10px #dedada;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
   font-size: 1.5rem;
   max-width: max-content;
   color: #fff;
@@ -158,6 +173,10 @@ p {
   border: none;
   background: radial-gradient(ellipse farthest-corner at 20px 0, #ff79da 0%, #9356dc 100%);
   cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
 
 img {
@@ -173,37 +192,69 @@ img {
 header {
   background-color: #ffffff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
+  height: min-content;
 }
 
 header .containerHead {
   max-width: 1200px;
   margin: auto;
-  display: flex;
-  align-content: space-between;
+  text-align: center;
 }
 
-header i {
+header .containerHead i {
   display: flex;
-  justify-self: flex-start;
-  margin-right: 1rem;
+  position: relative;
+  left: 20px;
+  top: 28px;
 }
 
-.heart .fas {
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.heart {
+  padding: 1rem;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+}
+
+.heart:hover > .far {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.heart:hover > .gradiant-heart {
+  animation: fade-out 1s ease-out both reverse;
+}
+
+.heart .far {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  opacity: 1;
+}
+
+.heart .gradiant-heart {
+  position: relative;
+  right: -25px;
   background: radial-gradient(ellipse farthest-corner at 20px 0, #ff79da 0%, #9356dc 100%);
+  opacity: 0;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.fa-heart {
-  padding: 1rem;
-}
-
 footer {
   background-color: #353535;
-  color: #fff;
-  background-image: #fff;
+  color: #ffffff;
+  background-image: #ffffff;
 }
 
 footer .ContainerF {
@@ -265,20 +316,18 @@ footer ul li {
 }
 
 .fonction {
-  width: 100%;
   background-color: #ffffff;
 }
 
 @media only screen and (min-width: 700px) {
   .fonction {
-    padding: 0rem;
+    padding: 5rem;
     height: 100%;
   }
   .fonction h2 {
     font-size: 2rem;
     padding: 1.83rem;
     margin: 0rem;
-    text-align: center;
   }
 }
 
@@ -288,13 +337,15 @@ footer ul li {
   list-style: none;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 90%;
+  grid-template-columns: 1fr;
   row-gap: 2rem;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1010px) {
   .fonction ul {
-    grid-template-columns: 1fr 70% 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    column-gap: 2rem;
   }
 }
 
@@ -306,6 +357,13 @@ footer ul li {
   width: 100%;
   border-radius: 1.5rem;
   box-shadow: 3px 3px 10px #dedada;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+
+.fonction li:hover {
+  transform: scale(1.05);
 }
 
 .fonction li:hover {
@@ -314,12 +372,6 @@ footer ul li {
 
 .fonction li:hover i {
   color: #9356dc;
-}
-
-@media only screen and (min-width: 700px) {
-  .fonction li {
-    grid-column-start: 2;
-  }
 }
 
 .fonction i {
@@ -387,5 +439,10 @@ section {
   width: 3rem;
   height: 0.25rem;
   background-color: #99e2d0;
+}
+
+h1 {
+  display: flex;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

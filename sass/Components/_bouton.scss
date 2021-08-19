@@ -2,6 +2,7 @@
 
 .btn {
   @include shadowcard;
+  @include grow;
   font-size: 1.5rem;
   max-width: max-content;
   color: #fff;

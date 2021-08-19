@@ -21,3 +21,8 @@ section {
   height: 0.25rem;
   background-color: $tertiarycolor;
 }
+
+h1{
+  display: flex;
+ justify-content: space-between;
+}
