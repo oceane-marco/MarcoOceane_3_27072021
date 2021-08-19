@@ -1,6 +1,5 @@
 .explor {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   text-align: center;
   width: 100%;
   @include tablette {
@@ -18,9 +17,8 @@
     }
   }
   &__presentation {
-    display: flex;
+    @include flex-column;
     height: 100%;
-    flex-direction: column;
     justify-content: space-between;
     justify-items: center;
     background-color: $backgroundmiddle;

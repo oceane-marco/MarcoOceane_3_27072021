@@ -1,11 +1,9 @@
 section {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
 }
 
 .ContainerM {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   background-color: $backgroundmiddle;
   max-width: 100%;
   padding: 2rem;

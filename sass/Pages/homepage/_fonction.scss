@@ -24,7 +24,7 @@
     }
   }
   li {
-    display: flex;
+    @include flexbox;
     background-color: $backgroundmiddle;
     padding: 1rem 0 1rem 0;
     align-items: center;

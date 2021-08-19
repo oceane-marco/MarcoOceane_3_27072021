@@ -7,11 +7,11 @@ header {
   .containerHead {
     max-width: 1200px;
     margin: auto;
-    display: flex;
+    @include flexbox;
     align-content: space-between;
   }
   i {
-    display: flex;
+    @include flexbox;
     justify-self: flex-start;
     margin-right: 1rem;
   }
