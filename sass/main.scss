@@ -1,10 +1,7 @@
 // importation du code
-@import "./base/reset";
-
 @import "./utils/variables";
-
 @import "./utils/mixins";
-@import "/base/base";
+@import "./base/reset";
 
 @import "./components/card";
 @import "./components/bouton";
@@ -18,4 +15,4 @@
 @import "./pages/homepage/fonction";
 @import "./pages/homepage/restaurant";
 
-@import "./pages/menuepage/menue";
+@import "./pages/menuepages/menue";

@@ -2,7 +2,7 @@
   background-color: $backgroundmiddle;
   padding: 0 1rem;
   @include tablette {
-    padding: 0 5rem;
+    padding: 0 5rem 5rem;
   }
   .ContainerCard {
     display: grid;
