@@ -1,22 +1,21 @@
 // importation du code
+@import "./base/reset";
 
-@import "./Base/reset";
+@import "./utils/variables";
 
-@import "./Utils/variables";
+@import "./utils/mixins";
+@import "/base/base";
 
-@import "./Utils/mixins";
-@import "./Base/base";
+@import "./components/card";
+@import "./components/bouton";
+@import "./components/img";
 
-@import "./Components/card";
-@import "./Components/bouton";
-@import "./Components/img";
+@import "./layout/header";
+@import "./layout/heart";
+@import "./layout/footer";
 
-@import "./Layout/header";
-@import "./Layout/heart";
-@import "./Layout/footer";
+@import "./pages/homepage/explor";
+@import "./pages/homepage/fonction";
+@import "./pages/homepage/restaurant";
 
-@import "./Pages/homepage/explor";
-@import "./Pages/homepage/fonction";
-@import "./Pages/homepage/restaurant";
-
-@import "./Pages/menuepage/menue";
+@import "./pages/menuepage/menue";

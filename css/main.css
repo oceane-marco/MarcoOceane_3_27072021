@@ -68,6 +68,17 @@ p {
   font-style: normal;
 }
 
+@keyframes card-pop-up-top {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .Card {
   display: flex;
   flex-direction: column;
@@ -113,14 +124,8 @@ p {
   border-radius: 0.75rem;
   margin: 1rem 0;
   box-shadow: 3px 3px 10px #dedada;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 400ms;
   cursor: pointer;
-}
-
-.CardM:hover {
-  transform: scale(1.05);
+  animation: card-pop-up-top 500ms 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .CardM__price {
@@ -227,11 +232,11 @@ header .containerHead i {
 
 .heart:hover > .far {
   opacity: 0;
-  transition: opacity 1s ease-out;
+  transition: opacity 0.1s ease-out;
 }
 
 .heart:hover > .gradiant-heart {
-  animation: fade-out 1s ease-out both reverse;
+  animation: fade-out 0.1s ease-out both reverse;
 }
 
 .heart .far {
@@ -410,6 +415,15 @@ footer ul li {
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
   }
+}
+
+.restaurant .New {
+  position: relative;
+  left: 25rem;
+  width: max-content;
+  padding: 0.2rem;
+  background-color: #99e2d0;
+  border: 3px solid #4acbab;
 }
 
 section {

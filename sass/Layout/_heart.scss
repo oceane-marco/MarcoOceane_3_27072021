@@ -16,10 +16,10 @@
   &:hover {
     & > .far {
       opacity: 0;
-      transition: opacity 1s ease-out;
+      transition: opacity 0.1s ease-out;
     }
     & > .gradiant-heart {
-      animation: fade-out 1s ease-out both reverse;
+      animation: fade-out 0.1s ease-out both reverse;
     }
   }
 

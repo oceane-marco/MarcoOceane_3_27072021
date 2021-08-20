@@ -1,8 +1,8 @@
 .restaurant {
   background-color: $backgroundmiddle;
-  padding: 1rem;
+  padding: 0 1rem;
   @include tablette {
-    padding: 5rem;
+    padding: 0 5rem;
   }
   .ContainerCard {
     display: grid;
