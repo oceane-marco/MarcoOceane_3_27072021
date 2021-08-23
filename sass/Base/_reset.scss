@@ -24,7 +24,9 @@ a:active {
 }
 
 // reset boddy
-
+* {
+  margin: 0px;
+}
 body {
   margin: 0px;
 }
@@ -48,7 +50,7 @@ h1 {
 
 h2 {
   margin: 1rem 0;
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 
 h4 {
