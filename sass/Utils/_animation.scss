@@ -47,3 +47,12 @@
     opacity: 0;
   }
 }
+@keyframes fade-out-load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}

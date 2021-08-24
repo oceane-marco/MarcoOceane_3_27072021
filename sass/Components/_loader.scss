@@ -1,6 +1,29 @@
 #loader {
-  position: absolute;
-  height: 100vw;
-  width: 100vw;
-  background: rgba($color: $backgroundmiddle, $alpha: 1);
+  display: block;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: $backgroundmiddle, $alpha: 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fade-out-load 1s ease-out 5s forwards;
+}
+.load {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 5px solid transparent;
+  border-top-color: $primarycolor;
+  border-bottom-color: $secondarycolor;
+  animation: rotate-scale-up 1s linear 5;
+}
+#loader h2 {
+  background-color: $tertiarycolor;
+  padding: 1rem;
+  border-radius: 1rem;
 }
