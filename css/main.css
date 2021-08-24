@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap%27");
 @keyframes card-pop-up-top {
   0% {
     transform: translateY(50px);
@@ -126,51 +127,9 @@ body {
   }
 }
 
-h1 {
-  font-size: 2rem;
-}
-
-@media only screen and (min-width: 700px) {
-  h1 {
-    font-size: 3rem;
-  }
-}
-
-h2 {
-  margin: 1rem 0;
-  font-size: 1.5rem;
-}
-
-@media only screen and (min-width: 700px) {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-@media only screen and (min-width: 700px) {
-  h4 {
-    font-size: 1.5rem;
-  }
-}
-
-p {
-  font-size: 0.9rem;
-}
-
 .fas,
 .far {
   font-size: 1.5rem;
-}
-
-@font-face {
-  font-family: "shrikhandregular";
-  src: url("polices/shrikhand-regular-webfont.woff2") format("woff2"), url("polices/shrikhand-regular-webfont.woff") format("woff"), url("polices/Shrikhand-Regular.TrueType") format("TrueType");
-  font-weight: normal;
-  font-style: normal;
 }
 
 #loader {
@@ -304,6 +263,7 @@ p {
   justify-content: flex-end;
   padding-left: 0.5rem;
   flex-grow: 1;
+  font-weight: bold;
 }
 
 .CardM__animation {
@@ -346,7 +306,7 @@ p {
   width: 100%;
 }
 
-.ContainerCard:nth-child(1) {
+.delay {
   animation-delay: 500ms;
 }
 
@@ -457,6 +417,10 @@ footer {
   background-color: #353535;
   color: #ffffff;
   background-image: #ffffff;
+}
+
+footer h1 {
+  font-family: Shrikhand;
 }
 
 footer .ContainerF {
@@ -577,6 +541,7 @@ footer ul li {
 }
 
 .fonction i {
+  color: #f6f6f6;
   padding: 0 1rem;
 }
 
@@ -637,6 +602,10 @@ section {
   font-family: Shrikhand;
   display: flex;
   justify-content: space-between;
+}
+
+.ContainerM h2 {
+  font-weight: normal;
 }
 
 .decoration {

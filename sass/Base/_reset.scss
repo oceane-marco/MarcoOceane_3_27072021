@@ -43,41 +43,13 @@ body {
 }
 
 //text and icons
-h1 {
-  font-size: 2rem;
-  @include tablette {
-    font-size: 3rem;
-  }
-}
 
-h2 {
-  margin: 1rem 0;
-  font-size: 1.5rem;
-  @include tablette {
-    font-size: 2rem;
-  }
-}
 
-h4 {
-  font-size: 1rem;
-  @include tablette {
-    font-size: 1.5rem;
-  }
-}
 
-p {
-  font-size: 0.9rem;
-}
+
 
 .fas,
 .far {
   font-size: 1.5rem;
 }
-@font-face {
-  font-family: "shrikhandregular";
-  src: url("polices/shrikhand-regular-webfont.woff2") format("woff2"),
-    url("polices/shrikhand-regular-webfont.woff") format("woff"),
-    url("polices/Shrikhand-Regular.TrueType") format("TrueType");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap%27');
