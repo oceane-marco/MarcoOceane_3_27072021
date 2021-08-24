@@ -20,7 +20,7 @@
   border: 5px solid transparent;
   border-top-color: $primarycolor;
   border-bottom-color: $secondarycolor;
-  animation: rotate-scale-up 1s linear 5;
+  animation: rotate-scale-up 0.8s linear infinite;
 }
 #loader h2 {
   background-color: $tertiarycolor;

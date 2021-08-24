@@ -35,13 +35,12 @@
     border-radius: 3px;
     background-color: $tertiarycolor;
     color: darken($color: $tertiarycolor, $amount: 40);
-    border: 3px solid darken($color: $tertiarycolor, $amount: 40);
     padding: 5px;
     width: max-content;
     position: absolute;
     top: 1rem;
     right: 0.75rem;
-    animation: heartbeat 1.5s ease-in-out 2s both;
+    animation: heartbeat 1.5s 6s ease-in-out 3 both;
   }
   &__img {
     height: 15rem;
