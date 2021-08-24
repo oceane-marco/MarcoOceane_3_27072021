@@ -60,6 +60,30 @@
   }
 }
 
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
 a:link {
   text-decoration: none;
   color: black;
@@ -103,20 +127,38 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 h2 {
   margin: 1rem 0;
-  font-size: 2rem;
-}
-
-h4 {
   font-size: 1.5rem;
 }
 
-p {
+@media only screen and (min-width: 700px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h4 {
   font-size: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  font-size: 0.9rem;
 }
 
 .fas,
@@ -134,7 +176,7 @@ p {
 #loader {
   display: block;
   position: fixed;
-  z-index: 10000;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -144,7 +186,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: fade-out-load 1s ease-out 5s forwards;
+  animation: fade-out-load 0.5s ease-out 1s forwards;
 }
 
 .load {
@@ -154,37 +196,13 @@ p {
   border: 5px solid transparent;
   border-top-color: #9356dc;
   border-bottom-color: #ff79da;
-  animation: rotate-scale-up 0.8s linear infinite;
+  animation: rotate-scale-up 0.5s linear infinite;
 }
 
 #loader h2 {
   background-color: #99e2d0;
   padding: 1rem;
   border-radius: 1rem;
-}
-
-@keyframes heartbeat {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    animation-timing-function: ease-out;
-  }
 }
 
 .Card {
@@ -225,7 +243,17 @@ p {
 .Card__info {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .Card__info {
+    padding: 1rem;
+  }
+}
+
+.Card p {
+  padding: 0.5rem 0;
 }
 
 .CardM {
@@ -242,10 +270,13 @@ p {
 }
 
 .CardM__container {
+  display: flex;
+  -moz-flex-direction: vertical;
+  flex-direction: column;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 75%;
+  max-width: 75%;
 }
 
 .CardM__container--title {
@@ -278,6 +309,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.CardM:hover .CardM__container {
+  max-width: 50%;
 }
 
 .CardM:hover .CardM__price {

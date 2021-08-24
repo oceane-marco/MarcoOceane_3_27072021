@@ -44,23 +44,29 @@ body {
 
 //text and icons
 h1 {
-  
-  font-size: 3rem;
+  font-size: 2rem;
+  @include tablette {
+    font-size: 3rem;
+  }
 }
 
 h2 {
   margin: 1rem 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  @include tablette {
+    font-size: 2rem;
+  }
 }
 
 h4 {
-  
-  font-size: 1.5rem;
+  font-size: 1rem;
+  @include tablette {
+    font-size: 1.5rem;
+  }
 }
 
 p {
-  
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .fas,
