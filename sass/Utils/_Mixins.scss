@@ -9,30 +9,20 @@
   }
 }
 @mixin shadowcard {
-  box-shadow: 3px 3px 10px #dedada;
+  box-shadow: 4px 4px 5px $backgrounddark;
 }
 
 // Flexbox display
 @mixin flexbox {
-  display: -webkit-box;
-  display: -moz-box;
-
-  display: -webkit-flex;
   display: flex;
 }
 
 @mixin flex-direction($direction) {
   @if $direction == column {
-    -webkit-flex-direction: vertical;
     -moz-flex-direction: vertical;
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
     flex-direction: column;
   } @else {
-    -webkit-flex-direction: horizontal;
     -moz-flex-direction: horizontal;
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row;
     flex-direction: row;
   }
 }

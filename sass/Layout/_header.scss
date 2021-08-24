@@ -12,7 +12,7 @@ header {
     text-align: center;
     i {
       @include flexbox;
-      position: absolute;
+      position: relative;
       left: 20px;
       top: 25px;
     }
