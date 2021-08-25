@@ -14,6 +14,7 @@
   animation: fade-out-load 0.5s ease-out 1s forwards;
 }
 .load {
+  margin: 1rem;
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -23,6 +24,7 @@
   animation: rotate-scale-up 0.5s linear infinite;
 }
 #loader h2 {
+  font-family: Shrikhand;
   background-color: $tertiarycolor;
   padding: 1rem;
   border-radius: 1rem;
