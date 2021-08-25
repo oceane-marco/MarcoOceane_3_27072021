@@ -2,10 +2,12 @@
   @include flex-column;
   text-align: center;
   width: 100%;
+
   @include tablette {
     height: 100%;
   }
   &__local {
+    box-shadow: 0px 1px 5px rgb(146, 145, 145) inset;
     background-color: $backgrounddark;
     padding: 10px;
     text-align: center;

@@ -5,8 +5,8 @@
     opacity: 1;
   }
   100% {
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
-    opacity: 0.8;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+    opacity: 0.9;
   }
 }
 
@@ -48,7 +48,8 @@
   100% {
     transform: translateX(-4rem);
   }
-} // heart
+}
+// heart
 @keyframes fade-out {
   0% {
     opacity: 1;

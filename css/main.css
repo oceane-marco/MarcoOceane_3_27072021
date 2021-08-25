@@ -5,8 +5,8 @@
     opacity: 1;
   }
   100% {
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
-    opacity: 0.8;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+    opacity: 0.9;
   }
 }
 
@@ -160,7 +160,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: fade-out-load 0.5s ease-out 1s forwards;
+  animation: fade-out-load 0.5s ease-out 2s forwards;
 }
 
 .load {
@@ -228,7 +228,7 @@ h2 {
 .CardM {
   background-color: #ffffff;
   padding: 1rem;
-  max-width: 75%;
+  max-width: auto;
   display: flex;
   border-radius: 1rem;
   margin: 1rem 0;
@@ -251,7 +251,8 @@ h2 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  max-width: 75%;
+  max-width: 80vw;
+  transition: width 2s;
 }
 
 .CardM__container--title {
@@ -289,7 +290,7 @@ h2 {
 }
 
 .CardM:hover .CardM__container {
-  width: -40px;
+  max-width: 55%;
 }
 
 .CardM:hover .CardM__price {
@@ -330,6 +331,7 @@ h2 {
   transform: scale(1);
   transition-property: transform;
   transition-duration: 0.6s;
+  box-shadow: 4px 4px 5px #c0bfbf;
   max-width: max-content;
   color: #fff;
   padding: 1rem;
@@ -344,7 +346,7 @@ h2 {
   transform: scale(1.05);
 }
 
-.btn :hover {
+.btn:hover {
   animation: text-shadow-drop-center 0.6s forwards;
 }
 
@@ -464,6 +466,7 @@ footer ul li {
 }
 
 .explor__local {
+  box-shadow: 0px 1px 5px #929191 inset;
   background-color: #eaeaea;
   padding: 10px;
   text-align: center;

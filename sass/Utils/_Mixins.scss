@@ -8,8 +8,8 @@
     @content;
   }
 }
-@mixin shadowcard {
-  box-shadow: 4px 4px 5px $backgrounddark;
+@mixin shadowcard($color: $backgrounddark) {
+  box-shadow: 4px 4px 5px $color;
 }
 
 // Flexbox display
