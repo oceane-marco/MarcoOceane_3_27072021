@@ -251,7 +251,7 @@ h2 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  max-width: 80vw;
+  max-width: 80%;
   transition: width 2s;
 }
 
@@ -617,8 +617,8 @@ section {
 }
 
 .decoration {
-  width: 3rem;
-  height: 0.25rem;
+  width: 50px;
+  height: 4px;
   background-color: #99e2d0;
 }
 /*# sourceMappingURL=main.css.map */
