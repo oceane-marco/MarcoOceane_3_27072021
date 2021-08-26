@@ -9,17 +9,13 @@ header {
   .containerHead {
     max-width: 1200px;
     margin: auto;
+    position: relative;
     text-align: center;
     i {
       @include flexbox;
       position: absolute;
-      left: 20px;
-      top: 25px;
-      @include desktop {
-        position: relative;
-        right: 20px;
-        top: 25px;
-      }
+      left: 10px;
+      top: 5px;
     }
   }
 }

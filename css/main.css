@@ -228,7 +228,6 @@ h2 {
 .CardM {
   background-color: #ffffff;
   padding: 1rem;
-  max-width: auto;
   display: flex;
   border-radius: 1rem;
   margin: 1rem 0;
@@ -236,12 +235,6 @@ h2 {
   cursor: pointer;
   animation: card-pop-up-top 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   overflow-x: hidden;
-}
-
-@media only screen and (min-width: 700px) {
-  .CardM {
-    max-width: 90%;
-  }
 }
 
 .CardM__container {
@@ -370,29 +363,23 @@ header {
 header .containerHead {
   max-width: 1200px;
   margin: auto;
+  position: relative;
   text-align: center;
 }
 
 header .containerHead i {
   display: flex;
   position: absolute;
-  left: 20px;
-  top: 25px;
-}
-
-@media only screen and (min-width: 1010px) {
-  header .containerHead i {
-    position: relative;
-    right: 20px;
-    top: 25px;
-  }
+  left: 10px;
+  top: 5px;
 }
 
 .heart {
-  padding: 1rem;
   display: flex;
-  width: 2rem;
-  height: 2rem;
+  text-align: center;
+  height: 20px;
+  position: relative;
+  top: 10px;
 }
 
 .heart:hover > .far {
@@ -405,18 +392,14 @@ header .containerHead i {
 }
 
 .heart .far {
-  width: 2rem;
-  height: 2rem;
-  text-align: center;
   opacity: 1;
 }
 
 .heart .gradiant-heart {
-  position: relative;
-  right: -25px;
-  background: radial-gradient(ellipse farthest-corner at 20px 0, #ff79da 0%, #9356dc 100%);
+  position: absolute;
+  top: 0;
   opacity: 0;
-  background-clip: text;
+  background: radial-gradient(ellipse farthest-corner at 20px 0, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -449,6 +432,23 @@ footer ul {
 
 footer ul li {
   padding: 10px 0px;
+}
+
+footer a:link {
+  color: #ffffff;
+}
+
+footer a:visited {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+footer a:focus,
+footer a:active {
+  color: #ffffff;
 }
 
 .explor {

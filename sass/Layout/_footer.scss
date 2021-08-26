@@ -21,4 +21,20 @@ footer {
       padding: 10px 0px;
     }
   }
+  a:link {
+    color: $backgroundlight;
+  }
+
+  a:visited {
+    color: $backgroundlight;
+  }
+
+  a:hover {
+    color: $backgroundlight;
+  }
+
+  a:focus,
+  a:active {
+    color: $backgroundlight;
+  }
 }
