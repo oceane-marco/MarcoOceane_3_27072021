@@ -83,19 +83,36 @@
     align-items: center;
     justify-content: center;
   }
-  &:hover {
-    .CardM__container {
-      max-width: 55%;
+    &:active {
+      .CardM__container {
+        max-width: 55%;
+      }
+      .CardM__price {
+        animation: slide-left-price 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          forwards;
+      }
+      .CardM__animation {
+        animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+      }
+      .CardM__circle {
+        animation: rotate-scale-up 0.65s linear both;
+      }
     }
-    .CardM__price {
-      animation: slide-left-price 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-        forwards;
-    }
-    .CardM__animation {
-      animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-    }
-    .CardM__circle {
-      animation: rotate-scale-up 0.65s linear both;
+  @include desktop {
+    &:hover {
+      .CardM__container {
+        max-width: 55%;
+      }
+      .CardM__price {
+        animation: slide-left-price 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          forwards;
+      }
+      .CardM__animation {
+        animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+      }
+      .CardM__circle {
+        animation: rotate-scale-up 0.65s linear both;
+      }
     }
   }
 }

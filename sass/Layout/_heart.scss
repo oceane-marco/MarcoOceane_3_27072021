@@ -5,11 +5,11 @@
   position: relative;
   top: 10px;
   &:hover {
-    & > .far {
+    .far {
       opacity: 0;
       transition: opacity 0.5s ease-out;
     }
-    & > .gradiant-heart {
+    .gradiant-heart {
       animation: fade-out 0.5s ease-out both reverse;
     }
   }
