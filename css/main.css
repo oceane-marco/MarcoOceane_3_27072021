@@ -244,8 +244,8 @@ h2 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  max-width: 80%;
-  transition: width 2s;
+  width: 80%;
+  transition: all 0.6s;
 }
 
 .CardM__container--title {
@@ -268,6 +268,8 @@ h2 {
   padding-left: 0.5rem;
   flex-grow: 1;
   font-weight: bold;
+  transform: translateX(0);
+  transition: all 0.6s;
 }
 
 .CardM__animation {
@@ -277,39 +279,41 @@ h2 {
   margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
   z-index: 0;
+  transform: translateX(0);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.6s;
 }
 
 .CardM:active .CardM__container {
-  max-width: 55%;
+  width: 55%;
 }
 
 .CardM:active .CardM__price {
-  animation: slide-left-price 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  transform: translateX(-4rem);
 }
 
 .CardM:active .CardM__animation {
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  transform: translateX(-4rem);
 }
 
 .CardM:active .CardM__circle {
-  animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.6s linear both;
 }
 
 @media only screen and (min-width: 1010px) {
   .CardM:hover .CardM__container {
-    max-width: 55%;
+    width: 55%;
   }
   .CardM:hover .CardM__price {
-    animation: slide-left-price 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    transform: translateX(-4rem);
   }
   .CardM:hover .CardM__animation {
-    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    transform: translateX(-4rem);
   }
   .CardM:hover .CardM__circle {
-    animation: rotate-scale-up 0.65s linear both;
+    animation: rotate-scale-up 0.6s linear both;
   }
 }
 
